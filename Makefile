@@ -1,7 +1,4 @@
-all : template.pdf
+all : pdf
 
-template.pdf : template.tex
-	pdflatex template.tex
+include LaTeX.mk
 
-clean :
-	rm -rf *.pdf *.aux *.log example.eps
